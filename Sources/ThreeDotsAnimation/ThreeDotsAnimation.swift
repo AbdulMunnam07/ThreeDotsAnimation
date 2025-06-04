@@ -3,7 +3,7 @@
 
 import AppKit
 
-public class LoadingOverlay: NSView {
+public class ThreeDotsAnimation: NSView {
 
     // MARK: - Properties
     private let blurView: NSVisualEffectView = {
