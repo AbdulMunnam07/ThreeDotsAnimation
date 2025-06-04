@@ -30,8 +30,7 @@ Clone or download the repo and drag the `ThreeDotsAnimation.swift` file into you
 
 ### 1. Import the Library
 
-```swift
-import ThreeDotsAnimation
+`import ThreeDotsAnimation`
 
 *To show loading use:*
 
