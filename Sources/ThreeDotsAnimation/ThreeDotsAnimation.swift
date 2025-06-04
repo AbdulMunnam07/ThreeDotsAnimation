@@ -3,7 +3,7 @@
 
 import AppKit
 
-class LoadingOverlay: NSView {
+public class LoadingOverlay: NSView {
 
     // MARK: - Properties
     private let blurView: NSVisualEffectView = {
@@ -162,7 +162,7 @@ class LoadingOverlay: NSView {
     }
 
     // MARK: - Public Methods
-    func show(in viewController: NSViewController) {
+    public func show(in viewController: NSViewController) {
         let parentView = viewController.view
         
         // Set the frame to match the parent view's bounds
@@ -178,7 +178,7 @@ class LoadingOverlay: NSView {
         startWavingAnimation()
     }
 
-    func hide() {
+    public func hide() {
         removeFromSuperview()
     }
 }
