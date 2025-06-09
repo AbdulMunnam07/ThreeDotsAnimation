@@ -28,31 +28,37 @@ Clone or download the repo and drag the `ThreeDotsAnimation.swift` file into you
 
 ## 🚀 Usage
 
-### 1. Import the Library
+### Basic usage (Three dots)
 
 `import ThreeDotsAnimation`
 
-*To show loading use:*
+`let loading = ThreeDotsAnimation()`
 
-`let loadingOverlay = LoadingOverlay()
-loadingOverlay.show(in: self)`
+`loading.show(in: self)`
 
 > self must be an instance of NSViewController.
 
-*To hide loading use:*
+### Custom symbols
 
-`loadingOverlay.hide()`
+`loading.show(in: self, symbols: ["❤️", "❤️", "❤️"])`
+
+`loading.show(in: self, symbols: ["★", "★", "★"])`
+
+`loading.show(in: self, symbols: ["⚡️", "🔥", "✨"])`
+
+
+### To hide loading use
+
+`loading.hide()`
 
 ## ✨Features
-- Beautiful wave animation using three dots (•)
 
-- Blurred, semi-transparent background for modal appearance
-
-- Smooth animation with built-in delays
-
-- Lightweight and plug-and-play ready
-
-- Resizes automatically with the parent view
+- Customizable Symbols: Use any combination of emoji or text characters
+- Beautiful Wave Animation: Smooth, staggered animation effect
+- Dynamic Layout: Automatically adjusts to any number of symbols
+- Blurred Background: Semi-transparent modal appearance
+- Lightweight: Simple plug-and-play implementation
+- Auto-Resizing: Adapts to parent view size changes
 
 ## 🖥️ Platform Support
 ✅ macOS (AppKit)
